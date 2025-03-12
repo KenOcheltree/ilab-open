@@ -7,87 +7,68 @@ This Jupyter notebook demonstrates InstructLab, an open source AI project that f
 
 The InstructLab method consists of three major components:
 * **Taxonomy-driven data curation:**  The taxonomy is a set of training data curated by humans as examples of new knowledge and skills for the model.
-* **Large-scale synthetic data generation:** A teacher model is used to generate new examples based on the seed training data. Recognizing that synthetic data can vary in quality, the InstructLab method adds an automated step to refine the example answers, ensuring they are grounded and safe.
+* **Large-scale synthetic data generation:** A teacher model is used to generate new examples based on the seed training data. Since synthetic data can vary in quality, InstructLab adds an automated step to refine the example answers, ensuring they are grounded and safe.
 * **Iterative model alignment tuning:** The model is retrained based on the synthetic data. The InstructLab method includes two tuning phases: knowledge tuning, followed by skill tuning.
 
-<img src="./images/Flow.png" width="800">
+<img src="./images/Flow.png" width="700">
 
-InstructLab  can be instantiated in several different forms, depending on the processing capabilities available. InstructLab can take the form of an open source installation or a Red Hat AI InstructLab installation. The open source installation can be run on a range of hardware from a laptop to a build your own (BYO) server instance running on a Virtual Machine (VM).
-
-In this notebook, we will demonstrate the open source version running on Colab with a GPU. The open source version running on a server is demonstrated in this notebook in the following major sections that are run sequentially:
+In the notebook, we will demonstrate the open source version of InstructLab running on Colab with a GPU, broken into the following major sequential sections:
 * Configuring InstructLab
 * Training with InstructLab
 * Inferencing with InstructLab
 
-# Prerequisites
+# Steps
 
-Before running this notebook, you need to perform the following:
-1. Sign In to Colab with a Google Account
-1. Arrange for Colab Paid Processing
-1. Set up a Hugging Face Token and Place in Colab
+## Step 1. Select a Colab Plan
 
-## Sign In to Colab with a Google Account
+1. Go to the the Colab page (https://colab.research.google.com/) and select Sign In at the upper right.
 
-Go to the the Colab page (https://colab.research.google.com/) and select Sign In at the upper right.
 
 <img src="./images/ColabWelcome.png" width=700>
 
-Select a Google Account to use with Colab. If you do not have a Google account, choose Sign in and on the SIgn In page, select Create account at the lower right.
+2. Select a Google Account to use with Colab. 
 
-<img src="./images/SignIn.png" width=500>
+3. If you do not have a Google account, choose Sign in and on the SIgn In page, select Create account at the lower right. Proceed though the steps to create a Google Account and then come back to the [Colab Sign In page](https://colab.research.google.com/) and sign in with your account
 
-Proceed though the steps to create a Google Account and then come back to the [Colab Sign In page](https://colab.research.google.com/) and sign in with your account
-
-## Arrange for Colab Paid Processing
-
-While signed into your Google account, go to the [Colab Plan page](https://colab.research.google.com/signup?utm_source=notebook_settings&utm_medium=link&utm_campaign=premium_gpu_selector). 
+4. Once signed into your Google account, go to the [Colab Plan page](https://colab.research.google.com/signup?utm_source=notebook_settings&utm_medium=link&utm_campaign=premium_gpu_selector). 
 
 <img src="./images/ColabPlan.png" width=600>
 
-Select one of the four offered plans that give access to a GPU with memory of at leat 18 GB. A typical single Instructlab run on a GPU will incur charges of one to two dollars. After selecting a plan, you will have to pay for it before you can use the GPU.
+5. Select one of the four offered plans, since all give access to a GPU with memory of at least 18 GB. A typical single Instructlab run on a GPU will incur charges of one to two dollars. After selecting a plan, you will have to pay for it before you can use the GPU.
 
-Once you have a Paid Colab Account, you will be able to select your choice of GPU.
-
-## Set up a Hugging Face Token and Place in Colab
-Go to the [Hugging Face site](https://huggingface.co/).
+## Step 2. Place your Hugging Face Token in Colab
+1. Go to the [Hugging Face site](https://huggingface.co/). If you have previously created a login with HuggingFace, select **Log In** and provide your credentials. Otherwise, select Sign Up and create a free HuggingFace account.
 
 <img src="./images/HF.png" width=700>
 
-If you have previously used that site, select **Log In** and provide your credntials. Otherwise, select Sign Up and create a free HuggingFace account.
 
-Select your account icon in the upper right and from teh drop down meu select **Access Tokens**.
+2. Select your account icon in the upper right and choose **Access Tokens** from the dropdown menu.
 
-<img src="./images/HFDropDown.png" width=200>
+<img src="./images/HFDropDown.png" width=700>
 
-On the Access Token page, select Create Token at the upper right.
+3. On the Access Token page, select Create Token at the upper right.
 
-<img src="./images/HFAccessTokens.png" width=600>
+<img src="./images/HFAccessTokens.png" width=700>
 
-Create a Fine-grained access token with the following permissions: “Read access to contents of all repos under your personal namespace”; “Read access to contents of all public gated repos you can access”. Save the token value for the next step. This is done on the Create new Access Token page, by selecting **Fine-grained**, name the Token "ilab", select the first two boxes under ***Repositories*** and move to the bottom of the page and select **Create Token**.
+4. Create a Fine-grained access token with the following permissions: “Read access to contents of all repos under your personal namespace”; “Read access to contents of all public gated repos you can access”. Save the token value for the next step. This is done on the Create new Access Token page, by selecting **Fine-grained**, name the Token "ilab", select the first two boxes under ***Repositories*** and move to the bottom of the page and select **Create Token**.
 
-<img src="./images/HFCreateToken.png" width=400>
+<img src="./images/HFCreateToken.png" width=700>
 
-On the popup that shows your access token, select the Copy Button, then Done.
+5. On the popup that shows your access token, select the Copy Button, then Done.
 
-Now go back to [Colab](https://colab.research.google.com/) and select the key icon in the left column.
+6. Now go back to [Colab](https://colab.research.google.com/) and select the key icon in the left column, seen highlighted in the following figure. 
 
-<img src="./images/ColabKey.png" width=80>
+5. On the new sceen that appears as shown below, select **+Add new secret**.
 
-On the new sceen that appears, select **+Add new secret**/
-
-<img src="./images/ColabAddSecret.png" width=400>
-
-Name the secret "hf_token" and paste the copied HuggingFace Token into the "Value" field. Slide the Notebook Access slider to the right to enable it (it turns blue). Close the Secrets window. 
+6. Name the secret "hf_token" and paste the copied HuggingFace Token into the "Value" field. Slide the Notebook Access slider to the right to enable it (it turns blue). Close the Secrets window. 
 
 <img src="./images/ColabSecretEnabled.png" width=400>
 
-# Steps
+## Step 3. Open the Jupyter Notebook in Colab
 
-## Step 1. Open the Jupyter Notebook in Colab
+1. Go to https://colab.research.google.com/ and sign in with your Google account. 
 
-Go to https://colab.research.google.com/ and sign in with your Google account. 
-
-Select File->Open notebook, select Github on the left side and enter “KenOcheltree” for the GitHub URL. Select the KenOcheltree/ilab-colab repository
+2. Select File->Open notebook, select Github on the left side. Enter “KenOcheltree” for the GitHub URL. Select the KenOcheltree/ilab-colab repository
 
 <img src="./images/Github.png" width=600>
 
@@ -95,36 +76,34 @@ At this point, Select the notebook named running_instructlab_on_gpu.jpynb and it
 
 <img src="./images/RunningILab.png" width=600>
 
+## Step 4. Select a GPU
 
-## Step 2. Select the GPU to use
-
-This step is performed when you wish to change the GPU used for the session. Once a GPU is selected, whenver  
-
-From the top menu, select Runtime->Change runtime type. You must select one of the GPU options. You can select a free GPU called T4 GPU which has a limited amount of resources. However, you may run out of free resources very quickly.
+1. From the top menu, select Runtime->Change runtime type. You now must select one of the GPU options L4 or A100 to run this notebeook. The A100 GPU is a good option as it has more memory and runs the InstructLab Jupyter notebook faster. 
 
 <img src="./images/ColabChangeRuntime.png" width=400>
 
-The A100 GPU is a good option. You can monitor resource usage by selecting Runtime->View resources and change plans as needed.
+2. You can monitor resource usage by selecting Runtime->View resources and change plans as needed.
 
-## Step 3. Run the first cell to perform pre-reset installs 
-Run the first code cell by clicking the arrow next to it. 
+**Note** This step can be performed whenever you want to change the GPU used. Changing the runtime will terminate the current session and lose current work. 
 
-<img src="./images/ColabRunFirst.png" width=400>
+## Step 5. Run the first cell to perform pre-reset installs .
+1. Run the first code cell by clicking the arrow next to it. 
 
-When it completes it will ask you to restart the session. Go ahead and restart the session (this only happens once).
+<img src="./images/ColabRunFirst.png" width=500>
+
+2. When it completes it will ask you to restart the session. Restart the session when requested.
 
 <img src="./images/ColabRestart.png" width=400>
 
-## Step 4. Run the second cell and select the InstrutLab run parameters
+## Step 6. Run the second cell and select the InstrutLab parameters
 
-Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running Instructlab.
+1. Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running Instructlab.
 
 <img src="./images/IlabParms.png" width=400>
 
-Select the desired run parameters. The paramters are as follows:
+2. Select the desired run parameters. The paramters are as follows:
 
-
-## Step 5. Run the remainder of the notebook
+## Step 7. Run the remainder of the notebook
 
 Select the third code cell without running it, and click on **Runtime->Run cell and below** to run the rest of the notebook.
 
@@ -136,20 +115,17 @@ The run will proceed as follows:
 1. Perform synthetic data generation
 1. Perform model training wiht the synthetic data
 
-
 After that run completes by exiting the inferencing loop, you can make another run if desired. To do that, go back to the second code cell, run it, and change the run parameters. Then select the third code cell without running it and click on Runtime->Run cell and below to run the rest of the notebook.
 
-
-## Step 6. Run inference to compare the base model and the trained model
+## Step 8. Run inference to compare the base model and the trained model
 
 Click on the Folder icon on the left to explore the files in the ilab folder. Preloaded QNA files and synthetically generated questions and answers can be found in this directory tree.
 
-## Step 7. Optionally Download trained model
+## Step 9. Optionally Download trained model
 
-## Step 8. Stop Runtime
+## Step 10. Stop Runtime
 
-## Step 9. Create your onw QNA File and repeat the above with your own data
+## Step 11. Create your onw QNA File and repeat the above with your own data
 
 # Summary and next steps
 
-You can explore the complete implementation of the DPK transforms for fine-tuning LLMs in our Jupyter Notebook in our GitHub repo.
