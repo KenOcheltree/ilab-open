@@ -131,7 +131,7 @@ Follow these steps to add your own dataset:
 - Create a taxonomy with the new data
 - Perform synthetic data generation
 - Run model training with the synthetic data
-- Opens a inferecing dialogue with untrained and trained models
+- Opens an inferecing dialogue with untrained and trained models
 
 After the run completes by exiting the inferencing loop, you can make another run if desired. To do that, go back to the second code cell, run it, and change the run parameters. Then select the third code cell without running it and click on Runtime->Run cell and below to run the rest of the notebook.
 
