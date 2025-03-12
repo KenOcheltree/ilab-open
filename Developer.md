@@ -120,7 +120,7 @@ Follow these steps to add your own dataset:
 
 ## Step 8. Run the remainder of the notebook
 
-1. Select the third code cell without running it, and click on **Runtime->Run cell and below** to run the rest of the notebook.
+1. Select the third code cell, shown below, without running it, and click on **Runtime->Run cell and below** to run the rest of the notebook.
 
 <img src="./images/ThirdCell.png" width=700>
 
@@ -146,4 +146,10 @@ Click on the Folder icon on the left to explore the files in the ilab folder. Pr
 ## Step 12. Create your onw QNA File and repeat the above with your own data
 
 # Summary and next steps
+
+Try running the notebook with the other example data sets. You can also experiment with how the number of Epochs and Iterations affect the quality of the gnerated model
+
+After running through the Instructlab notebook, you are encouraged to create your own QNA file file as desscribed in Step 6.
+
+You can download your generated model and 
 
