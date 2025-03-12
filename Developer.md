@@ -3,7 +3,7 @@
 ### By Kenneth Ocheltree, Steve Buckley
 
 # Overview
-This Jupyter notebook demonstrates InstructLab, an open source AI project that facilitates knowledge and skills contributions to Large Language Models (LLMs). InstructLab uses a novel synthetic data-based alignment tuning method for Large Language Models introduced in this [paper](https://arxiv.org/abs/2403.01081). The open source InstructLab repository is available [here](https://github.com/instructlab/instructlab) and provides additional documentation on using InstructLab.
+This Jupyter notebook demonstrates InstructLab, an open source AI project that facilitates knowledge and skills contributions to Large Language Models (LLMs). InstructLab uses a novel synthetic data-based alignment tuning method for Large Language Models introduced in this [paper](https://arxiv.org/abs/2403.01081). The open source InstructLab repository available [here](https://github.com/instructlab/instructlab) provides additional documentation on using InstructLab.
 
 The InstructLab method consists of three major components:
 * **Taxonomy-driven data curation:**  The taxonomy is a set of training data curated by humans as examples of new knowledge and skills for the model.
@@ -86,7 +86,7 @@ At this point, Select the notebook named running_instructlab_on_gpu.jpynb and it
 
 **Note** This step can be performed whenever you want to change the GPU used. Changing the runtime will terminate the current session and lose current work. 
 
-## Step 5. Run the first cell to perform pre-reset installs .
+## Step 5. Run the first cell to perform pre-reset installs
 1. Run the first code cell by clicking the arrow next to it. 
 
 <img src="./images/ColabRunFirst.png" width=500>
@@ -99,23 +99,28 @@ At this point, Select the notebook named running_instructlab_on_gpu.jpynb and it
 
 1. Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running Instructlab.
 
-<img src="./images/IlabParms.png" width=400>
+<img src="./images/IlabParms.png" width=700>
 
 2. Select the desired run parameters. The paramters are as follows:
+- Dataset - Choose between data on the 2024 Oscars, IBM Quantum technology, and Agentic AI
+- Number of Questions and Answars (QNA) -Selects the number of QNAs to be synthetically generated. You may wish ot select a small number of QNAs if you are introducing a new Dataset.
+- Number of Epochs: specifies the number of times the learning algorithm will work through the entire training dataset.
+- Iternations - specifies the number of stages of training.
 
 ## Step 7. Run the remainder of the notebook
 
-Select the third code cell without running it, and click on **Runtime->Run cell and below** to run the rest of the notebook.
+1. Select the third code cell without running it, and click on **Runtime->Run cell and below** to run the rest of the notebook.
 
-The run will proceed as follows:
-1. Complete the environment setup by downloading and installing instructlab and other required packages
-1. Configure the InstructLab installation for running
-1. Download necessary Models for training and teaching
-1. Create a taxonomy with the new data to be added
-1. Perform synthetic data generation
-1. Perform model training wiht the synthetic data
+2. The run will proceed as follows:
+- Complete the environment setup by installing instructlab and other required packages
+- Configure the InstructLab installation
+- Download LLM models for training and teaching
+- Create a taxonomy with the new data
+- Perform synthetic data generation
+- Run model training with the synthetic data
+- Opens a 
 
-After that run completes by exiting the inferencing loop, you can make another run if desired. To do that, go back to the second code cell, run it, and change the run parameters. Then select the third code cell without running it and click on Runtime->Run cell and below to run the rest of the notebook.
+After the run completes by exiting the inferencing loop, you can make another run if desired. To do that, go back to the second code cell, run it, and change the run parameters. Then select the third code cell without running it and click on Runtime->Run cell and below to run the rest of the notebook.
 
 ## Step 8. Run inference to compare the base model and the trained model
 
