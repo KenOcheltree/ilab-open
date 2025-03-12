@@ -80,7 +80,8 @@ At this point, Select the notebook named running_instructlab_on_gpu.jpynb and it
 
 1. From the top menu, select Runtime->Change runtime type. You now must select one of the GPU options L4 or A100 to run this notebeook. The A100 GPU is a good option as it has more memory and runs the InstructLab Jupyter notebook faster. 
 
-<img src="./images/ColabChangeRuntime.png" width=400>
+<img src="./images/ColabChangeRuntime.png" width=35
+     0>
 
 2. You can monitor resource usage by selecting Runtime->View resources and change plans as needed.
 
@@ -89,13 +90,13 @@ At this point, Select the notebook named running_instructlab_on_gpu.jpynb and it
 ## Step 5. Run the first cell to perform pre-reset installs
 1. Run the first code cell by clicking the arrow next to it. 
 
-<img src="./images/ColabRunFirst.png" width=500>
+<img src="./images/ColabRunFirst.png" width=700>
 
 2. When it completes it will ask you to restart the session. Restart the session when requested.
 
-<img src="./images/ColabRestart.png" width=400>
+<img src="./images/ColabRestart.png" width=300>
 
-## Step 6. Run the second cell and select the InstrutLab parameters
+## Step 6. Run the second cell and select the InstructLab parameters
 
 1. Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running Instructlab.
 
@@ -110,6 +111,8 @@ At this point, Select the notebook named running_instructlab_on_gpu.jpynb and it
 ## Step 7. Run the remainder of the notebook
 
 1. Select the third code cell without running it, and click on **Runtime->Run cell and below** to run the rest of the notebook.
+
+<img src="./images/ThirdCell.png" width=700>
 
 2. The run will proceed as follows:
 - Complete the environment setup by installing instructlab and other required packages
