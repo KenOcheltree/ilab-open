@@ -30,7 +30,7 @@ The notebook demonstrates the open source version of InstructLab running on Cola
 
 3. If you do not have a Google account, choose Sign in and on the Sign In page, select Create account at the lower right. Proceed though the steps to create a Google Account and then come back to the [Colab Sign In page](https://colab.research.google.com/) and sign in with your account
 
-4. Once signed into COlab with your Google account, go to the [Colab Plan page](https://colab.research.google.com/signup?utm_source=notebook_settings&utm_medium=link&utm_campaign=premium_gpu_selector). 
+4. Once signed into Colab with your Google account, go to the [Colab Plan page](https://colab.research.google.com/signup?utm_source=notebook_settings&utm_medium=link&utm_campaign=premium_gpu_selector). 
 
 <img src="./images/ColabPlan.png" width=700>
 
