@@ -104,19 +104,21 @@ Follow these steps to add your own dataset:
 1. Double click on the /content/ilab/config.json file to edit and specify the qna_location where your data resides within the Dewey Decimal classification system. Close and save the config.json file.
 1. You can now specify to run with your own data by selecting **Your Content 1** or **Your Content 2** in the next code cell.
 
-<img src="./images/ColabFiles.png" width=700>
+<img src="./images/ColabFiles.png" width=800>
 
 ## Step 7. Run the second cell and select the InstructLab parameters
 
 1. Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running Instructlab.
 
-<img src="./images/IlabParms.png" width=700>
+<img src="./images/IlabParms.png" width=800>
 
 2. Select the desired run parameters. The paramters are as follows:
 - Dataset - Choose between data on the 2024 Oscars, IBM Quantum technology, and Agentic AI
 - Number of Questions and Answars (QNA) -Selects the number of QNAs to be synthetically generated. You may wish ot select a small number of QNAs if you are introducing a new Dataset.
 - Number of Epochs: specifies the number of times the learning algorithm will work through the entire training dataset.
 - Iternations - specifies the number of stages of training.
+- Live Q&A - option to open an inferecing dialogue with untrained and trained models to compare results
+- Download - option to download the created trained model
 
 ## Step 8. Run the remainder of the notebook
 
@@ -124,32 +126,32 @@ Follow these steps to add your own dataset:
 
 <img src="./images/ThirdCell.png" width=700>
 
-2. The run will proceed as follows:
+2. The run will proceed as follows to configure InstructLab and create a model:
 - Complete the environment setup by installing instructlab and other required packages
 - Configure the InstructLab installation
 - Download LLM models for training and teaching
 - Create a taxonomy with the new data
 - Perform synthetic data generation
 - Run model training with the synthetic data
-- Opens an inferecing dialogue with untrained and trained models
+
+3. After the model is created, you can choose to run inferencing on the model or download the trained model
+
+- Optionally opens an inferencing dialogue with untrained and trained models
+- Optionally downloads the trained model
 
 After the run completes by exiting the inferencing loop, you can make another run if desired. To do that, go back to the second code cell, run it, and change the run parameters. Then select the third code cell without running it and click on Runtime->Run cell and below to run the rest of the notebook.
 
-## Step 9. Run inference to compare the base model and the trained model
-
-Click on the Folder icon on the left to explore the files in the ilab folder. Preloaded QNA files and synthetically generated questions and answers can be found in this directory tree.
-
-## Step 10. Optionally Download trained model
-
-## Step 11. Stop Runtime
-
-## Step 12. Create your onw QNA File and repeat the above with your own data
-
 # Summary and next steps
+
+This Tutorial demonstrated utilizing InstructLab for introducing datasets, data generation and model training. This notebook produced an InstructLab trained model that was available for inferecing and downloading.
+
+Click on the Folder icon on the left to explore the files in the ilab folder. Preloaded QNA files and synthetically generated questions and answers can be found in this directory tree. You can also select **Runtime->View resources** to see the resource utilization of the run.
+
+<img src="./images/ColabMore.png" width=1000>
 
 Try running the notebook with the other example data sets. You can also experiment with how the number of Epochs and Iterations affect the quality of the gnerated model
 
 After running through the Instructlab notebook, you are encouraged to create your own QNA file file as desscribed in Step 6.
 
-You can download your generated model and 
+Once you have trained your model, you can download your model and experiment with it in other environments.
 
