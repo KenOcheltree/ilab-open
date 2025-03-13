@@ -12,7 +12,7 @@ The InstructLab method consists of three major components:
 
 <img src="./images/Flow.png" width="700">
 
-In the notebook, we will demonstrate the open source version of InstructLab running on Colab with a GPU, broken into the following major sequential sections:
+The notebook demonstrates the open source version of InstructLab running on Colab with a GPU. It runs the InstructLab process from Python code without the need to specify detailed configuration parameters or type commands into a command line interface (CLI). This allows the user to focus on preparing input files and testing fine-tuned output models. It is broken into the following major sequential sections:
 * Configuring InstructLab
 * Training with InstructLab
 * Inferencing with InstructLab
