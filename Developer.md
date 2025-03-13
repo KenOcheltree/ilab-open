@@ -1,5 +1,5 @@
 # Using InstructLab to add knowledge and skills to LLMs in a Jupyter notebook
-### A guide for running Instructlab on Colab with a GPU
+### A guide for running InstructLab on Colab with a GPU
 ### By Kenneth Ocheltree, Steve Buckley
 
 # Overview
@@ -28,13 +28,13 @@ In the notebook, we will demonstrate the open source version of InstructLab runn
 
 2. Select a Google Account to use with Colab. 
 
-3. If you do not have a Google account, choose Sign in and on the SIgn In page, select Create account at the lower right. Proceed though the steps to create a Google Account and then come back to the [Colab Sign In page](https://colab.research.google.com/) and sign in with your account
+3. If you do not have a Google account, choose Sign in and on the Sign In page, select Create account at the lower right. Proceed though the steps to create a Google Account and then come back to the [Colab Sign In page](https://colab.research.google.com/) and sign in with your account
 
 4. Once signed into your Google account, go to the [Colab Plan page](https://colab.research.google.com/signup?utm_source=notebook_settings&utm_medium=link&utm_campaign=premium_gpu_selector). 
 
 <img src="./images/ColabPlan.png" width=700>
 
-5. Select one of the four offered plans, since all give access to a GPU with memory of at least 18 GB. A typical single Instructlab run on a GPU will incur charges of one to two dollars. After selecting a plan, you will have to pay for it before you can use the GPU.
+5. Select one of the four offered plans, since all give access to a GPU with memory of at least 18 GB. A typical single InstructLab run on a GPU will incur charges of one to two dollars. After selecting a plan, you will have to pay for it before you can use the GPU.
 
 ## Step 2. Place your Hugging Face Token in Colab
 1. Go to the [Hugging Face site](https://huggingface.co/). If you have previously created a login with HuggingFace, select **Log In** and provide your credentials. Otherwise, select Sign Up and create a free HuggingFace account.
@@ -74,7 +74,7 @@ In the notebook, we will demonstrate the open source version of InstructLab runn
 
 ## Step 4. Select a GPU
 
-1. From the top menu, select Runtime->Change runtime type. You now must select one of the GPU options L4 or A100 to run this notebeook. The A100 GPU is a good option as it has more memory and runs the InstructLab Jupyter notebook faster. 
+1. From the top menu, select Runtime->Change runtime type. You now must select one of the GPU options L4 or A100 to run this notebook. The A100 GPU is a good option as it has more memory and runs the InstructLab Jupyter notebook faster. 
 
 <img src="./images/ColabChangeRuntime.png" width=350>
 
@@ -108,16 +108,16 @@ Follow these steps to add your own dataset:
 
 ## Step 7. Run the second cell and select the InstructLab parameters
 
-1. Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running Instructlab.
+1. Run the second code code cell by clicking on the arrow next to it. Once the second cell is run, it presents a number of different parameters available for running InstructLab.
 
 <img src="./images/IlabParms.png" width=800>
 
-2. Select the desired run parameters. The paramters are as follows:
+2. Select the desired run parameters. The parameters are as follows:
 - Dataset - Choose between data on the 2024 Oscars, IBM Quantum technology, and Agentic AI
-- Number of Questions and Answars (QNA) -Selects the number of QNAs to be synthetically generated. You may wish ot select a small number of QNAs if you are introducing a new Dataset.
+- Number of Questions and Answers (QNA) -Selects the number of QNAs to be synthetically generated. You may wish to select a small number of QNAs if you are introducing a new dataset.
 - Number of Epochs: specifies the number of times the learning algorithm will work through the entire training dataset.
-- Iternations - specifies the number of stages of training.
-- Live Q&A - option to open an inferecing dialogue with untrained and trained models to compare results
+- Iterations - specifies the number of stages of training.
+- Live Q&A - option to open an inferencing dialogue with untrained and trained models to compare results
 - Download - option to download the created trained model
 
 ## Step 8. Run the remainder of the notebook
@@ -127,7 +127,7 @@ Follow these steps to add your own dataset:
 <img src="./images/ThirdCell.png" width=700>
 
 2. The run will proceed as follows to configure InstructLab and create a model:
-- Complete the environment setup by installing instructlab and other required packages
+- Complete the environment setup by installing InstructLab and other required packages
 - Configure the InstructLab installation
 - Download LLM models for training and teaching
 - Create a taxonomy with the new data
@@ -143,15 +143,15 @@ After the run completes by exiting the inferencing loop, you can make another ru
 
 # Summary and next steps
 
-This Tutorial demonstrated utilizing InstructLab for introducing datasets, data generation and model training. This notebook produced an InstructLab trained model that was available for inferecing and downloading.
+This Tutorial demonstrated utilizing InstructLab for introducing datasets, data generation and model training. This notebook produced an InstructLab trained model that was available for inferencing and downloading.
 
 Click on the Folder icon on the left to explore the files in the ilab folder. Preloaded QNA files and synthetically generated questions and answers can be found in this directory tree. You can also select **Runtime->View resources** to see the resource utilization of the run.
 
 <img src="./images/ColabMore.png" width=1000>
 
-Try running the notebook with the other example data sets. You can also experiment with how the number of Epochs and Iterations affect the quality of the gnerated model
+Try running the notebook with the other example data sets. You can also experiment with how the number of Epochs and Iterations affect the quality of the generated model
 
-After running through the Instructlab notebook, you are encouraged to create your own QNA file file as desscribed in Step 6.
+After running through the InstructLab notebook, you are encouraged to create your own QNA file file as described in Step 6.
 
 Once you have trained your model, you can download your model and experiment with it in other environments.
 
