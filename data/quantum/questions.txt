@@ -1,0 +1,11 @@
+Some sample questions on Quantum Qiskit patterns and the quantum roadmap are:
+1. What is a Qiskit pattern?
+2. What are the steps in a Qiskit pattern?
+3. What are the different ways that a Qiskit pattern can be executed?
+4. What is the Qiskit pattern step where circuits are run on hardware?
+5. What is the Qiskit pattern step where outputs are stitched back together to obtain the desired result?
+6. What is the final step of the Qiskit pattern?
+7. What is the goal of the Flamingo quantum system?
+8. What will be the characteristics of the Starling quantum system?
+9. What has IBM done to accelerate quantum application development?
+10. What is IBM doing to abstract the complexities of quantum circuits?

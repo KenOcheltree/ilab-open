@@ -1,0 +1,21 @@
+{
+    "taxonomy_repo":"https://github.com/KenOcheltree/taxonomy",
+    "local_taxonomy_dir": "taxonomy",    
+    "use_cases": {  
+        "oscars": {
+            "qna_location": "knowledge/arts/recreational_and_performing_arts/public_performances/film_radio_and_television/film"
+        },
+        "quantum": {
+            "qna_location": "knowledge/information/computer_science/quantum_computing"
+        },
+        "agentic_ai": {
+            "qna_location": "knowledge/information/special_topics/artifical_intelligence"
+        },
+        "your_content_1": {
+            "qna_location": "knowledge/information"
+        },
+        "your_content_2": {
+            "qna_location": "knowledge/information"
+        }
+	}
+}

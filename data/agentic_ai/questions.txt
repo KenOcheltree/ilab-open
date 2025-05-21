@@ -1,0 +1,6 @@
+Some sample questions on agentic AI:
+1. What is agentic AI?
+2. What resources can AI agents use?
+3. What are items that could make up an agentic AI platform?
+4. How can agentic agent systems combine LLMs and traditional programming?
+5. How can agentic AI use feedback loops?

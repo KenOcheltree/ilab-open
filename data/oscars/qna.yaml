@@ -1,0 +1,217 @@
+# location: /knowledge/arts/recreational_and_performing_arts/public_performances/film_radio_and_television/film
+version: 3
+created_by: juliadenham
+domain: pop_culture
+seed_examples:
+  - context: |
+      The 96th Academy Awards ceremony, which was presented by the Academy of Motion Picture Arts and Sciences (AMPAS),
+      took place on March 10, 2024, at the Dolby Theatre in Hollywood, Los Angeles. During the gala, the AMPAS presented
+      Academy Awards (commonly referred to as Oscars) in 23 categories honoring films released in 2023.
+      Comedian Jimmy Kimmel hosted the show for the fourth time.
+      The nominations were announced on January 23, 2024. Oppenheimer led with 13 nominations, followed by Poor Things
+      and Killers of the Flower Moon with 11 and 10, respectively. Oppenheimer won a leading seven awards, including
+      Best Picture and Best Director. Other major winners were Poor Things with four awards and The Zone of Interest
+      with two. The films which won one award each include American Fiction, Anatomy of a Fall, Barbie,
+      The Boy and the Heron, Godzilla Minus One, The Holdovers, The Last Repair Shop, 20 Days in Mariupol, War Is Over!,
+      and The Wonderful Story of Henry Sugar. The telecast drew 19.5 million viewers in the United States, becoming the
+      most watched awards
+      show since 2020.
+    questions_and_answers:
+      - question: |
+          When did the 2024 Oscars happen?
+        answer: |
+          The 2024 Oscars were held on March 10, 2024.
+      - question: |
+          Who hosted the 2024 Oscars?
+        answer: |
+          Jimmy Kimmel hosted the 96th Academy Awards ceremony.
+      - question: |
+          What film had the most Oscar nominations in 2024?
+        answer: |
+          Oppenheimer had 13 Oscar nominations.
+  - context: |
+      Winners and nominees
+      The nominees for the 96th Academy Awards were announced on January 23, 2024, by actors Zazie Beetz and Jack Quaid
+      at the Samuel Goldwyn Theater in Beverly Hills. The winners were announced during the awards ceremony on
+      March 10, 2024. The cultural phenomenon of "Barbenheimer" received a total of twenty-one nominations (eight for
+      Barbie and thirteen for       Oppenheimer). The two films competed against each other in six categories, including
+      Best Picture. Several notable nominees include Steven Spielberg, who extended his record for the most Best Picture
+      nominations to thirteen; Martin Scorsese, who received his tenth nomination for Best Director, and became the
+      oldest nominee in the category; Thelma Schoonmaker, who received her ninth nomination for Best Film Editing;
+      composer John Williams, who received his 54th nomination; and Willie D. Burton, who received his eighth nomination
+      as a below-the-line crew member. Ten actors received their first Oscar nominations this year. The acting nominees
+      included portrayals from three openly LGBTQ+ actors: Colman Domingo, Jodie Foster, and Lily Gladstone.
+      Gladstone also became the first Native American actress to be nominated. Scott George, who wrote the music and
+      lyrics to "Wahzhazhe (A Song for My People)", became the first member of the Osage Nation to be nominated for an
+      Academy Award. This was the fifth consecutive year with at least one Best Picture nominee directed by a woman:
+      Greta Gerwig with Barbie, Celine Song with Past Lives, and Justine Triet with Anatomy of a Fall. Triet also became
+      the eighth woman nominated for Best Director. Overall, six couples received nominations that they shared together
+      in their respective categories. Billie Eilish and Finneas O'Connell won Best Original Song, becoming the youngest
+      two-time Oscar winners in history (22 and 26 years, respectively), having previously won the award in 2022.
+      Killers of the Flower Moon became Scorsese's third film to be nominated in ten or more categories and not win a
+      single award, after Gangs of New York and The Irishman. The Zone of Interest became the first British film to win
+      the International Feature category. Godzilla Minus One became the first Japanese and non-English language film to
+      win the Best Visual Effects category. Director Hayao Miyazaki, at the age of 83, became the oldest director to win
+      Best Animated Feature for The Boy and the Heron. Additionally, The Boy and the Heron became the first PG-13
+      animated film to win Best Animated Feature; all of the previous winners were rated G or PG.
+    questions_and_answers:
+      - question: |
+          What is the first Japanese film to wih the Best Visual Effects category?
+        answer: |
+          Godzilla Minus One
+      - question: |
+          Who has the record for the most Best Picture nominations and how many?
+        answer: |
+          Steven Spielberg has the record of thirteen nominations.
+      - question: |
+          What two films competed against each other in six categories, including Best Picture?
+        answer: |
+          Oppenheimer and Barbie
+  - context: |
+      Categories, Winners and Nominees
+        Best Picture
+            Winner
+                Oppenheimer - Producers: Emma Thomas, Charles Roven, and Christopher Nolan, producers
+            Nominees -
+                American Fiction - Producers: Ben LeClair, Nikos Karamigios [de], Cord Jefferson, and Jermaine Johnson
+                Anatomy of a Fall - Producers: Marie-Ange Luciani and David Thion
+                Barbie - Producers: David Heyman, Margot Robbie, Tom Ackerley, and Robbie Brenner
+                The Holdovers - Producer: Mark Johnson
+                Killers of the Flower Moon - Producers: Dan Friedkin, Bradley Thomas, Martin Scorsese, and Daniel Lupi
+                Maestro - Producers: Bradley Cooper, Steven Spielberg, Fred Berner, Amy Durning [de],
+                and Kristie Macosko Krieger
+                Past Lives - Producers: David Hinojosa, Christine Vachon, and Pamela Koffler
+                Poor Things - Producers: Ed Guiney, Andrew Lowe, Yorgos Lanthimos, and Emma Stone
+                The Zone of Interest - Producer: James Wilson
+        Best Director
+            Winner
+                Christopher Nolan – Oppenheimer
+            Nominees
+                Justine Triet – Anatomy of a Fall
+                Martin Scorsese – Killers of the Flower Moon
+                Yorgos Lanthimos – Poor Things
+                Jonathan Glazer – The Zone of Interest
+        Best Actor
+            Winner
+                Cillian Murphy – Oppenheimer as J. Robert Oppenheimer ‡
+            Nominees
+                Bradley Cooper – Maestro as Leonard Bernstein
+                Colman Domingo – Rustin as Bayard Rustin
+                Paul Giamatti – The Holdovers as Paul Hunham
+                Jeffrey Wright – American Fiction as Thelonious "Monk" Ellison
+        Best Actress
+            Winner
+                Emma Stone – Poor Things as Bella Baxter ‡
+            Nominees
+                Annette Bening – Nyad as Diana Nyad
+                Lily Gladstone – Killers of the Flower Moon as Mollie Burkhart
+                Sandra Hüller – Anatomy of a Fall as Sandra Voyter
+                Carey Mulligan – Maestro as Felicia Montealegre
+        Best Supporting Actor
+            Winner
+                Robert Downey Jr. – Oppenheimer as Lewis Strauss ‡
+            Nominees
+                Sterling K. Brown – American Fiction as Clifford "Cliff" Ellison
+                Robert De Niro – Killers of the Flower Moon as William King Hale
+                Ryan Gosling – Barbie as Ken
+                Mark Ruffalo – Poor Things as Duncan Wedderburn
+        Best Supporting Actress
+            Winner
+                Da'Vine Joy Randolph – The Holdovers as Mary Lamb ‡
+            Nominees
+                Emily Blunt – Oppenheimer as Kitty Oppenheimer
+                Danielle Brooks – The Color Purple as Sofia
+                America Ferrera – Barbie as Gloria
+                Jodie Foster – Nyad as Bonnie Stoll
+    questions_and_answers:
+      - question: |
+          At the 2024 Oscars, who were the nominees for best director and who won?
+        answer: |
+          The nominees for director at the 2024 Oscars was Christopher Nolan for Oppenheimer,
+          Justine Triet for Anatomy of a Fall, Martin Scorsese for Killers of the Flower Moon,
+          Yorgos Lanthimos for Poor Things, and Jonathan Glazer for The Zone of Interest.
+          Christopher Nolan won best director for Oppenheimer.
+      - question: |
+          Who won the award for Best Actor at the 2024 Oscars?
+        answer: |
+          Cillian Murphy in Oppenheimer
+      - question: |
+          Who won the award for Best Actress at the 2024 Oscars?
+        answer: |
+          Emma Stone in Poor Things
+  - context: |
+      Jimmy Kimmel hosted the 96th Academy Awards, his fourth overall. On October 17, 2023, Hamish Hamilton was
+      announced as director. On November 15, Jimmy Kimmel was announced as host, returning for the second consecutive
+      year and fourth Academy Awards overall. On November 30, 2023, ABC and the Academy announced that the start time
+      of the ceremony would be moved up by an hour to 4:00 p.m. PT (7:00 p.m. ET). This change enabled ABC to air a
+      half-hour of primetime programming as a lead-out, featuring a new episode of its sitcom Abbott Elementary.
+      An American Sign Language livestream was broadcast on the Academy's YouTube page featuring video of interpreters.
+      The pre-show was hosted for the third consecutive year by Vanessa Hudgens, joined by new co-host Julianne Hough.
+      Due to the scheduling change, the pre-show was shortened to 30 minutes. The beginning of the ceremony was delayed
+      by six minutes, due to arrivals being slowed by Israel–Hamas war protests outside of the theatre.
+      On January 29, 2024, comedian and broadcaster Amelia Dimoldenberg, host of the YouTube interview series Chicken
+      Shop Date, was announced as the social media ambassador and red carpet correspondent. Dimoldenberg was involved
+      in multiple Oscar season events, including the Oscars Nominees luncheon, where she participated in an Academy
+      video production with nominees. She was also involved interviewing people at the Oscars red carpet and the
+      "Oscars 96 Behind the Scenes Tour".
+      Presenters were announced in a series of groups beginning on February 26, 2024. Performers were announced on
+      February 28, 2024. After the first batch of presenters was announced, The Hollywood Reporter learned that the
+      Academy would revive a popular presenting format previously used in 2009, where five Oscar-winning actors for
+      leading and supporting performances took the stage together to introduce the current nominees in their
+      respective categories. David Alan Grier was selected as the event's announcer.
+      Production designers Alana Billingsley and Misty Buckley designed the stage over the course of nine months.
+      According to Billingsley and Buckley, they were inspired by contemporary spaces where people can "meet, exchange,
+      create [like] a modern-day plaza". Throughout the ceremony, the stage subtly changed its design to honor the
+      nominees; the screenplay categories included images of real typewriters, while the Best Costume Design category
+      showcased images of several of the nominated costumes.
+      Messi the Dog from Anatomy of a Fall attended the ceremony and had his own seat in the audience. According to The
+      Hollywood Reporter, multiple companies with nominated films had complained to the Academy about him attending the
+      Oscar nominees luncheon and giving the film an advantage for voting. Before the ceremony, the show's host,
+      Jimmy Kimmel, shared a video in which he could be seen rehearsing his Oscars jokes with Messi. He also made a
+      surprise appearance in the audience of the show and appeared to urinate on Matt Damon's star on the Hollywood
+      Walk of Fame as part of the ongoing Damon–Kimmel feud.
+      Nominees Kaouther Ben Hania, Finneas O'Connell, Billie Eilish, and Mark Ruffalo, as well as presenters
+      Ramy Youssef and Mahershala Ali, wore red Artists4Ceasefire badges calling for a ceasefire in Gaza.
+    questions_and_answers:
+      - question: |
+          Who was announced as the social media ambassador and red carpet correspondent for the 2024 Oscars?
+        answer: |
+          Comedian and broadcaster Amelia Dimoldenberg
+      - question: |
+          Who hosted the 2024 Oscars pre-show?
+        answer: |
+          Vanessa Hudgens and Julianne Hough
+      - question: |
+          How long did it take to build the 2024 Oscars stage?
+        answer: |
+          Nine months
+  - context: |
+      Box office performance of Best Picture nominees
+      When the nominations were announced, the films nominated for Best Picture had earned a combined gross of
+      $1.09 billion at the American and Canadian box offices at the time.[87] Barbie was the highest-grossing film
+      among the Best Picture nominees, with $636 million in domestic box office receipts. Oppenheimer came in second
+      with $327 million. The two films, comprising the Barbenheimer phenomenon, represented 88% of the cumulative
+      box office haul generated by Best Picture nominees prior to their nominations.[88] Oppenheimer became the
+      highest-grossing Best Picture winner since The Lord of the Rings: The Return of the King at the
+      76th Academy Awards in 2004. It also became the first one to gross more than $100 million
+      at the domestic box office in the decade since Argo at the 85th Academy Awards in 2013.[89]
+    questions_and_answers:
+      - question: |
+          What 2024 Oscar Best Picture nominee was the highest-grossing movie?
+        answer: |
+          Barbie
+      - question: |
+          How much did Openheimer gross at the box office?
+        answer: !
+          $327 million
+      - question: |
+          What was the combined gross of the 2024 Best Picture nominees?
+        answer: |
+          $1.09 billion
+document_outline: |
+ Information about the 2024 Academy Awards ceremony where the Oscars are presented.
+document:
+  repo: https://github.com/juliadenham/oscars2024_knowledge.git
+  commit: e1744af
+  patterns:
+    - oscars2024_results.md
