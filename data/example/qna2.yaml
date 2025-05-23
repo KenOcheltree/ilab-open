@@ -232,4 +232,4 @@ document:
   repo: https://github.com/KenOcheltree/ilab-open
   commit: 8bda837411fcfe3646ee624d429dce133d6d5b21
   patterns:
-    - agentic-ai.md
+    - refs/agentic-ai.md

@@ -198,4 +198,4 @@ document:
   repo: https://github.com/KenOcheltree/ilab-open
   commit: 8bda837411fcfe3646ee624d429dce133d6d5b21
   patterns:
-    - qiskit_roadmap_pattern_knowledge_latest.md
+    - refs/qiskit_roadmap_pattern_knowledge_latest.md

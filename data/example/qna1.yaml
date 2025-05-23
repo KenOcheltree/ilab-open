@@ -214,4 +214,4 @@ document:
   repo: https://github.com/KenOcheltree/ilab-open
   commit: 8bda837411fcfe3646ee624d429dce133d6d5b21
   patterns:
-    - oscars2024_results.md
+    - refs/oscars2024_results.md
