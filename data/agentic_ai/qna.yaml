@@ -230,7 +230,7 @@ seed_examples:
 document_outline: |
  Information about agentic AI
 document:
-  repo: https://github.com/KenOcheltree/ilab-references
-  commit: 8a4ac4740d379c448458f7babf6d15b1bc195b72
+  repo: https://github.com/KenOcheltree/ilab-open
+  commit: e50adf9838ac9a1705720d3ec39054e9f6786841
   patterns:
     - agentic-ai.md
