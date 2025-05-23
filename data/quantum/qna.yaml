@@ -195,7 +195,7 @@ seed_examples:
 document_outline: |
  Information about IBM's quantum computer patterns and roadmap.
 document:
-  repo: https://github.com/ermahendraswain/qiskit_knowledge
-  commit: a9e1cd41b33858339b5bd76a9c17d3db4e0da4b2
+  repo: https://github.com/KenOcheltree/ilab-open
+  commit: 8bda837411fcfe3646ee624d429dce133d6d5b21
   patterns:
     - qiskit_roadmap_pattern_knowledge_latest.md
