@@ -1,0 +1,3 @@
+# v0.25
+instructlab==0.25
+yamllint==1.37.1
