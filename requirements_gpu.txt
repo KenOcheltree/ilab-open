@@ -3,4 +3,8 @@
 #Limiting TRL to 0.14.0 prevents the Training Error "index out of range"
 llama_cpp_python[server]==0.3.6 -C cmake.args='-DGGML_CUDA=on -DGGML_NATIVE=off'
 instructlab[cuda]==0.26.1
+# Added 7/3/25
+thinc==8.3.4
+numba==0.61.0
+fsspec==2025.3.2
 vllm>=0.8.0
