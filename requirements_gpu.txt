@@ -1,5 +1,6 @@
 # v0.26.1
+#Coupled with %pip install numpy==1.26.4 torch psutil==7.0.0 pillow==10.4.0
 #Limiting TRL to 0.14.0 prevents the Training Error "index out of range"
 llama_cpp_python[server]==0.3.6 -C cmake.args='-DGGML_CUDA=on -DGGML_NATIVE=off'
 instructlab[cuda]==0.26.1
-vllm
+vllm>=0.8.0
