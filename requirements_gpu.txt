@@ -5,6 +5,7 @@ llama_cpp_python[server]==0.3.6 -C cmake.args='-DGGML_CUDA=on -DGGML_NATIVE=off'
 instructlab[cuda]==0.26.1
 vllm>=0.8.0
 accelerate==1.0.1
+trl==0.18.0
 # Added 7/3/25
 #thinc==8.3.4
 #numba==0.60.0
